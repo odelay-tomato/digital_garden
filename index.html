@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<meta charset=utf-8>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>work</title>
+<style type="text/css">
+
+html {
+  /* font-size: 95%; */
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  background-color: #fcfcfa;
+}
+
+body {
+  margin: 0 18px;
+  font-size: 14px;
+}
+
+body, button, input, select, textarea {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: rgb(112, 110, 112);
+  /* color: #333; */
+}
+
+a:link { color: steelblue; text-decoration: none; }
+a:visited { color:steelblue; }
+a:hover { color: #007afc; text-decoration: underline; text-style: bold; }
+a:active { color: #007afc; }
+
+
+#header, #footer, #sidebar, h1, h2, h3, h4 {
+    /* font-family: "PT Sans", Verdana, sans-serif; */
+}
+
+/* h1 {
+    font-size: 64px;
+    font-weight: 300;
+    letter-spacing: -2px;
+    margin: .5em 0 .3em 0;
+}*/
+#header, #footer, #sidebar {
+    /*color: #636363;*/
+    font-size: small;
+  }
+
+.oneliner {  display: inline-block;  max-height: 20px;  overflow: hidden;  margin: 0;  padding: 0;   float: left; }
+
+.rule {  border-top: 2px dotted #969696;  margin: 0; }
+/************************************************************************************
+STRUCTURE
+*************************************************************************************/
+#pagewrap {	padding: 5px;	width: 900px;	margin: 25px auto; }
+#header {	/*height: 180px;*/ }
+#content {	width: 600px; float: left; }
+#sidebar { width: 300px;	float: right; }
+#footer {	clear: both; }
+
+.multi-column {  -webkit-column-count: 3;  -moz-column-count: 3;  column-count: 1; }
+
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************/
+/* for 980px or less */
+@media screen and (max-width: 980px) {
+	#pagewrap {	width: 94%;	}
+	#content { width: 65%;	}
+	#sidebar { width: 30%;	}
+}
+
+/* for 700px or less */
+@media screen and (max-width: 700px) {
+	#content { width: auto; float: none;	}
+	#sidebar { width: auto; float: none;	}
+}
+
+/* for 480px or less */
+@media screen and (max-width: 480px) {
+	#header {	height: auto; 	}
+	h1 {	font-size: 24px;	}
+	#sidebar { display: none; }
+}
+
+/* border & guideline (you can ignore these) */
+#content {	/*background: #f8f8f8;*/ }
+#sidebar {	/*background: #f0efef;*/ }
+#header, #sidebar {	margin-bottom: 5px;}
+#content {  margin-bottom: 25px; }
+#pagewrap, #header, #content, #sidebar, #footer { 	/*border: solid 1px #ccc;*/ }
+
+</style>
+
+<!-- <script src="js/days_at.js"></script> -->
+<script src="js/js_clock.js"></script>
+<script src="js/until62.js"></script>
+<!-- <script src="js/wfh.js"></script> -->
+<!-- <script src="js/after50.js"></script> -->
+
+</head>
+<body class="clouds">
+<div id="pagewrap">
+<div id="header">
+  <h1>+/-</h1>
+  <span id="date_time"></span>
+  <script type="text/javascript">window.onload = date_time('date_time');</script>
+  <!-- <br />
+  <span id="time_at" class="shy_moment"></span>
+  <script type="text/javascript">window.onload = time_at('time_at');</script>
+  <br />
+  <span id="until" class="orange"></span>
+  <script type="text/javascript">window.onload = until_sixtytwo('until');</script>
+  <br />
+  <span id="workdays"></span>
+  <script type="text/javascript">window.onload = wfh('workdays');</script> -->
+  <!-- <span id="after"></span>
+  <script type="text/javascript">window.onload = after_fifty('after');</script> -->
+
+
+</div>
+
+<div id="content">
+	<div class="multi-column">
+<!-- +/- -->
+
+            <p>
+              daily &#8250;
+              <a href="http://www.newsblur.com/">newsblur</a> /
+              <a href="https://twitter.com/">twitter</a> /
+              <a href="https://instagram.com/">instagram</a> /
+              <a href="https://projects.fivethirtyeight.com/">538</a> /
+              <a href="https://www.economist.com/">economist</a>
+            </p>
+<!-- TOOLS -->
+            <p>
+              tools &#8250;
+              <a href="http://gmail.google.com/">gmail</a> /
+              <a href="https://www.wunderground.com/weather/us/wa/kingston/47.80,-122.50">forecast</a> /
+              <a href="https://www.flightradar24.com/47.78,-122.95/9">flight</a> /
+              <a href="https://www.wsdot.com/Ferries/Schedule/scheduledetailbyroute.aspx?route=ed-king">ferry</a> /
+              <a href="https://www.tides.net/washington/1380/">tide</a>
+            </p>
+<!-- DEV -->
+            <p>
+              dev &#8250;</>
+              <a title="web" href="file:///C:/workspace/projects/web">file:</a> /
+               <a title="localhost" href="http://localhost:8080">:8080</a> /
+               <a title="localhost" href="http://localhost:3000">:3000</a> /
+               <a href="file:///C:/workspace/projects/web/random-good-morning.html">morning</a>
+            </p>
+<!-- MISC -->
+            <p>
+              misc &#8250;
+              <a href="http://www.reddit.com/r/pics/">reddit</a> /
+              <a href="https://www.flickr.com/photos/25254392@N04/">flickr</a> /
+              <a href="https://drive.google.com/drive/u/0/my-drive">drive</a> /
+              <a href="https://webapp4.asu.edu/myasu/">school</a> /
+              <a title="fidelity" href="https://nb.fidelity.com/public/nb/default/home">fidelity</a> /
+              <a href="https://secure.touchnet.com/C21035_tsa/web/login.jsp">mesa</a>
+            </p>
+<!-- ENT -->
+            <p>
+              ent &#8250;
+              <a href="http://www.netflix.com/Login">netflix</a> /
+              <a href="https://www.nhl.com/stanley-cup-playoffs">nhl</a> /
+              <a href="https://www.domestika.org/en/courses/1218-the-art-of-sketching-transform-your-doodles-into-art/units/4987-materials-as-models">domestika</a> /
+              <a href="https://www.patreon.com/stefanmarjoram/posts">patreon</a>
+            </p>
+            <p>
+              <a href="http://www.zefrank.com/thewiki/Category:the_show_transcripts"><img src="ze-frank_the-show_favicon.gif" alt="DUCKIE!"></a> /
+              <a href="https://craigmod.com/huh/">huh</a>
+            </p>
+	</div>
+</div>
+
+
+<div id="sidebar">
+  <span id="time_at" class="shy_moment"  style="background: #eee;"></span>
+  <script type="text/javascript">window.onload = time_at('time_at');</script>
+  <br />
+  <span id="until" class="orange" style="background: #eee;"></span>
+  <script type="text/javascript">window.onload = until_sixtytwo('until');</script>
+  <br />
+  <span id="workdays" style="background: #eee;"></span>
+  <script type="text/javascript">window.onload = wfh('workdays');</script>
+    <!-- <p>
+      Depart Kingston &#8250; 05:25 / 07:05 / 08:45<br />
+      Depart Seattle &#8250; 15:25 / 17:05 / 18:45
+    </p> -->
+    <p>
+      <pre>http-server or mdserver</pre>
+    </p>
+    <p>
+      <em>sabermetrics:</em><br />
+      The search for objective knowledge about baseball through analysis of statistical record.
+    </p>
+
+    <p>
+      <em>The sabermetrician's credo:</em> <br/>
+      "I'm not sure, this is why I'm not sure, and this is roughly how not sure I am."
+    </p>
+    <p>
+      "...a balance between being precise yet warm and loose." - Stefan Marjoram
+    </p>
+    <br />
+    <p>
+      music &#8250; <a href="https://open.spotify.com/collection/tracks">spotify</a> /
+      <a href="https://somafm.com/">soma fm</a> /
+      <a href="https://www.youtube.com/watch?v=XxP8kxUn5bc">birds</a>
+      <br />
+      <!--elect &#8250; <a href="https://fivethirtyeight.com/live-blog/2020-election-results-coverage/">538</a> /
+      <a href="https://abcnews.go.com/Elections/2020-us-presidential-election-results-live-map">abc</a> /
+      <a href="https://projects.fivethirtyeight.com/trump-biden-election-map/">forecast</a><br />
+      <a href="https://littlealchemy2.com/">alchemy</a> /
+      <a href="https://littlealchemy2.gambledude.com/">walk</a>-->
+    </p>
+</div>
+  <div id="footer">
+  <pre>20210521</pre>
+  <!-- New version for personal/non-work homepage-->
+  </div>
+</div>
+</body>
+</html>
